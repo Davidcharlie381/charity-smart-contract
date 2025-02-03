@@ -11,7 +11,7 @@ async function main() {
   const charity = await Charity.deploy(target, goal);
   await charity.waitForDeployment();
 
-  console.log(`Greeting deployed to: ${await charity.getAddress()}`);
+  console.log(`Charity deployed to: ${await charity.getAddress()}`);
 }
 
 main().catch((error) => {
